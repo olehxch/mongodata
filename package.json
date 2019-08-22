@@ -1,0 +1,46 @@
+{
+  "name": "mongodata",
+  "version": "1.0.0",
+  "description": "Very fast and small collection and document mapping system for MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --runInBand",
+    "test-cov": "jest --verbose --runInBand --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/audiowaves/mongodata"
+  },
+  "homepage": "https://github.com/audiowaves/mongodata",
+  "author": "Oleh",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "24.9.0"
+  },
+  "dependencies": {
+    "lodash": "4.17.13"
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node",
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ],
+    "coverageDirectory": ".coverage",
+    "coverageReporters": [
+      "lcov"
+    ],
+    "globals": {
+      "NODE_ENV": "test",
+      "JEST_USE_BASENAME_FOR_CACHING": false
+    },
+    "modulePathIgnorePatterns": [
+      "node_modules/"
+    ],
+    "roots": [
+      "<rootDir>/lib/"
+    ],
+    "cacheDirectory": "<rootDir>/.jestcache"
+  }
+}
